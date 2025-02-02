@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "it is backend server we are going to see how to connect backend and frontend",
   "main": "server.js",
-     "type" : "module" ,
- 
+  "type": "module",
   "scripts": {
     "start": "node server.js"
- 
   },
   "author": "abuzer khan",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
   }
 }
