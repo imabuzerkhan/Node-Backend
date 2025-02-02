@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "it is backend server we are going to see how to connect backend and frontend",
+  "main": "server.js",
+     "type" : "module" ,
+ 
+  "scripts": {
+    "start": "node server.js"
+ 
+  },
+  "author": "abuzer khan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
