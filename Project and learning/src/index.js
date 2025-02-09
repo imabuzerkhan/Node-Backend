@@ -2,11 +2,18 @@
 // import { DB_NAME } from './constant.js'
 // import express from 'express' 
 
-
+import { app } from "./app.js";
 import DatabaseConnect from "./db/index.js";
 
 
-DatabaseConnect();
+DatabaseConnect()
+.then(()=>{
+  app.listen(process.env.PORT, () =>{
+    console.log(`App is start on port ${process.env.PORT} `)
+  } )
+}).catch((err)=>{
+  console.log(`listen failed ${err} `)
+})
 
 
 
